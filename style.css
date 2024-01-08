@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	max-width: 1320px;
+	font-family: font-family: 'Merriweather', serif;;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+header{
+	background-image: url(resources/banner_img.png);
+	background-size: cover;
+	height: 600px;
+	display: flex;
+	align-items: center;
+}
+
+.header_content{
+	max-width: 600px;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+}
+
+.header_content h3{
+	font-size: 32px;
+}
+
+.header_content h2{
+	font-size: 72px;
+	font-weight: 900;
+}
