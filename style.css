@@ -12,7 +12,16 @@ body{
 	margin: 0 auto;
 }
 
+p{
+	color: rgba(7, 2, 17, 0.60);
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	line-height: 32px;
+}
 
+.span_color{
+	color: #F00;
+}
 
 
 /*common css finish*/
@@ -103,7 +112,7 @@ header{
 }
 
 .midnight_party_content{
-	width: 800px;
+	width: 880px;
 	color: white;
 	padding: 90px;
 }
@@ -115,6 +124,11 @@ header{
 	margin-bottom: 20px;
 }
 
+.midnight_party_content p{
+	color: rgba(255, 255, 255, 0.80);
+	font-size: 18px;
+	line-height: 30px;
+}
 
 .midnight_party_content button{
 	color: white;
@@ -153,9 +167,6 @@ header{
 	font-weight: 600;
 }
 
-.join_now_content span{
-	color: #F00;
-}
 
 .join_now_content button{
 	background: #F00;
@@ -200,12 +211,6 @@ header{
 	padding: 20px 0px;
 }
 
-.fast_content p{
-	color: rgba(7, 2, 17, 0.60);
-	font-family: 'Inter', sans-serif;
-	font-size: 20px;
-	line-height: 32px
-}
 
 .best_offer_img {
 	padding: 30px;
@@ -225,12 +230,29 @@ header{
 }
 
 .second_content p{
-	color: rgba(7, 2, 17, 0.60);
-	font-family: 'Inter', sans-serif;
-	font-size: 20px;
-	line-height: 32px;
 	margin: 20px 0px 30px;
 }
 
 
 /*best offer part finish*/
+
+
+
+
+
+.holidays_section{
+
+}
+
+.holidays_section h5{
+	color: #070211;
+	font-family: 'Inter', sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.holidays_section h2{
+	color: #070211;
+	font-size: 72px;
+	font-weight: 900;
+}
