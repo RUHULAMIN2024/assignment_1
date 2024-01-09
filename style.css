@@ -15,6 +15,10 @@ header, main{
 	margin: 0 auto;
 }
 
+header, section{
+	margin-bottom: 100px !important;
+}
+
 p{
 	color: rgba(7, 2, 17, 0.60);
 	font-family: 'Inter', sans-serif;
@@ -46,13 +50,27 @@ header{
 	border-radius: 15px;
 	display: flex;
 	align-items: center;
+	position: relative;
 }
+
+header::after{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #0a0a0a;
+	opacity: .1;
+}
+
 
 .header_content{
 	width: 600px;
 	margin: 0 auto;
 	color: white;
 	text-align: center;
+	z-index: 1;
 }
 
 .header_content h3{
@@ -72,7 +90,6 @@ header{
 
 .new_year_section{
 	margin: 0 auto;
-	padding: 90px 0px;
 	font-family: 'Inter', sans-serif;
 }
 
@@ -119,12 +136,25 @@ header{
 	background-size: cover;
 	height: 600px;
 	border-radius: 15px;
+	position: relative;
+}
+
+.midnight_party_section::after{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #0a0a0a;
+	opacity: .1;
 }
 
 .midnight_party_content{
 	width: 880px;
 	color: white;
 	padding: 90px;
+	z-index: 1;
 }
 
 
@@ -159,7 +189,6 @@ header{
 .join_now{
 	height: 480px;
 	border-radius: 15px;
-	margin-top: 90px;
 	background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
 }
 
@@ -237,14 +266,13 @@ header{
 	margin: 20px 0px 30px;
 }
 
-
 /*best offer part finish*/
 
 
+/*holidays section start*/
 
 
-
-/*.holidays_section{
+.holidays_section{
 	margin: 90px 0px;
 	text-align: center;
 }
@@ -260,15 +288,43 @@ header{
 	color: #070211;
 	font-size: 72px;
 	font-weight: 900;
+	margin: 20px 0px;
+}
+
+.holidays_section p{
+	margin: 0 auto;
+	width: 890px;
 }
 
 .holidays_img{
-	width: 600px;
+	margin-top: 40px;
+	height: 660px;
 	position: relative;
 }
 
-	
-}*/
+.img1{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-radius: 10px;
+}
+
+.img2{
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 1px;
+}
+
+.img3{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-radius: 10px;
+}
+
+/*holidays section finish*/
+
 
 /*portfolio section start*/
 
@@ -296,7 +352,7 @@ header{
 }
 
 .portfolio_img img{
-	border-radius: 15px;
+	border-radius: 10px;
 }
 
 
@@ -380,7 +436,7 @@ footer{
 }
 
 .footer_middle img{
-	margin: 60px 20px;
+	margin: 50px 20px;
 }
 
 /*footer section finish*/
